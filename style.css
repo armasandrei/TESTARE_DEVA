@@ -1,0 +1,579 @@
+body {
+}
+.header {
+    background-image: url(https://n.foxdsgn.com/deva/wp-content/uploads/2021/02/banner.jpg);
+    background-size: cover;
+    background-color:#5d21d2;
+    height: 650px;
+}
+header .navbar-expand .brand-image {
+    width: 7.5em;
+    height: 3.5em;
+}
+header .navbar-nav1 {
+    font-size: 1.5em;
+}
+header .navbar-nav1 a {
+    color: white;
+}
+header .navbar-nav1 a:hover {
+    color:aquamarine
+}
+header .navbar-nav2 a {
+    color:#301c6b;
+}
+header .navbar-nav2 a:hover{
+    color:#0b0227;
+}
+header .navbar-expand .close {
+    display: none;
+}
+header .navbar-expand .toggler {
+    display: none;
+}
+
+header .navbar-expand .navbar-nav3 .btn-purchase {
+    text-align: center;
+}
+header .navbar-expand .navbar-nav3 .btn-purchase a {
+    font-weight: bolder;
+    width: 150px;
+    height: 45px;
+    color:#301c6b;
+    background-color:#0dcaf0;
+}
+header .navbar-expand .navbar-nav3 .btn-purchase a:hover {
+    color: white;
+}
+
+.container .buttons a:hover {
+
+    color: pink;
+}
+
+.container .colaboration a:hover {
+
+    color: aquamarine;
+}
+
+
+
+/* Adaptivity navbar */
+@media (max-width: 767px) {
+    header .navbar-expand .brand-image {
+    width: 3.5em;
+    height: 3em;   
+}
+   header .navbar-expand .toggler {
+    display: inline;
+    margin-right: 10px;
+    font-size:30px;
+    color: white;
+}
+   header .navbar-expand ul.navbar-nav {
+       display: none;
+   }
+   #nav-toggler:target ul.navbar-nav1 {
+       display: flex;
+       flex-direction: column;
+       position: absolute;
+       left: 0;
+       top: 0;
+       background-color: blanchedalmond;
+       width: 325px;
+       height: 650px;
+       padding: 11em 0 11em 1em;
+   }
+    #nav-toggler:target ul.navbar-nav1 .close {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+    }
+   #nav-toggler:target ul.navbar-nav1 li:first-child a {
+      transform: translateX(-10px);
+   }
+   #nav-toggler:target ul.navbar-nav1 li:first-child ul {
+       position: absolute;
+       top: -140px;
+       left: 80px;
+       background-color: transparent;
+   }
+   #nav-toggler:target ul.navbar-nav1 a {
+       color: #301c6b;
+       font-size: 16px;
+   }
+   #nav-toggler:target ul.navbar-nav1 a:hover {
+        color:#0dcaf0;
+   }
+   #nav-toggler:target ul.navbar-nav3 {
+       display: block;
+       position: absolute;
+       top: 5em;
+       left: 5em;
+   }
+   #nav-toggler:target ul.navbar-nav3 .btn-purchase a {
+       background-color:transparent;
+   }
+   #nav-toggler:target ul.navbar-nav3 .btn-purchase a:hover {
+       color:#0dcaf0;
+   }
+}
+
+@media (min-width: 767px) and (max-width:991px) {
+header .navbar-expand .brand-image {
+    width: 4.5em;
+    height: 3.5em;   
+}
+header .navbar-nav1 {
+    font-size: 1em;
+}
+header .navbar-expand .navbar-nav3 .btn-purchase {
+    margin-left: 30px;
+}
+header .navbar-expand .navbar-nav3 .btn-purchase a {
+    font-weight: bolder;
+    width: 130px;
+    height: 40px;
+    font-size: .9em;
+}
+}
+header .content .text-principal {
+    margin-top: 25px;
+    font-weight: bolder;
+    font-size: 2.4em;
+}
+header .content .text-secundar {
+    font-size: 23px;
+    margin: 20px 0  40px 0;
+}
+header .content .button-1 {
+    color:#301c6b;
+}
+header .content .button-2 {
+    color: #0dcaf0;
+}
+header figure .image {
+    height: 365px;
+    width: 625px;
+    margin-top: 4em;
+    margin-left: 5em;
+}
+header .colaboration {
+    margin-left: -2em;
+    margin-top: 3em;
+}
+header .colaboration span {
+    font-size: 1.5em;
+}
+header .colaboration ul li {
+    display: inline-block;
+    width: 30px;
+    margin: 0 10px;
+    font-size: 30px;
+}
+header .colaboration ul li a {
+    color: white;
+}
+
+/* Content header adaptivity */
+@media (max-width: 500px) {
+    header .content .col:first-child {
+       order: 2;
+   }
+   header .content .col:nth-child(2) {
+       order: 1;
+   }
+    header .content .text {
+        margin-left: 15px;
+        padding: 0;
+   }
+   header .content figure img {
+       height: 190px;
+       width: 330px;
+       margin: 0;
+   }
+   header .content .text-principal  {
+       margin-top: 0;
+       font-size: 30px;
+       font-weight: bolder;
+   }
+   header .content .text-secundar {
+       margin: 0 0  20px 0;
+       font-size: 20px;
+}
+   header .content .button-1 {
+    padding: 13px 20px;
+    color:#301c6b;
+    }
+    header .content .button-2 {
+    padding: 13px 30px;
+    }
+    header .colaboration {
+        margin-top: 1em;
+    }
+    header .colaboration ul li {
+        font-size: 20px;
+    }
+}
+@media (min-width: 501px) and (max-width:991px) {
+    header .content figure {
+        display: none;
+    }
+     header .content .text-principal  {
+        margin-top: 1em;
+       font-size: 40px;
+       font-weight: bolder;
+       text-align: center;
+   }
+   header .content .text-secundar {
+       margin: 10px 0  40px 0;
+       font-size: 25px;
+       text-align: justify;
+}
+    header .content .buttons {
+        text-align: center;
+    }
+    header .content .button-1 {
+    padding: 13px 20px;
+    color:#301c6b;
+    margin-right: 30px;
+    }
+    header .content .button-2 {
+    padding: 13px 30px;
+    margin-left: 30px;
+    }
+    header .colaboration {
+        margin-top: 4em;
+        text-align: center;
+    }
+    header .colaboration span {
+        font-size: 25px;
+    }
+    header .colaboration li {
+        font-size: 30px;
+    }
+
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    header .content figure img {
+        height: 290px;
+        width: 510px;
+        margin: 0;
+    }
+}
+
+section.pricing {
+    border-top:4px solid white;
+    background-color: #5d21d2;
+    background-image: url(https://n.foxdsgn.com/deva/wp-content/uploads/2021/02/banner-clean.jpg);
+    background-size:cover;
+}
+.pricing .decoration img {
+    position: absolute;
+    top: 730px;
+    width: 100px;
+    height: 180px;
+}
+.pricing  .pricing-btn{
+    font-weight: bolder;
+    background-color: #6e38d8;
+}
+.pricing .pricing-slot {
+    margin-right: 15px;
+}
+.pricing main .oferta {
+    padding-left: 30px;
+}
+.pricing main .oferta h2 {
+    font-size: 40px;
+}
+.pricing main .oferta p {
+    font-size: 18px;
+}
+.pricing main h1 .number {
+    font-size: 80px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.pricing main button {
+    font-size: 1em;
+    color: white;
+    background-color: #5227c7;
+    border: 1px solid #5227c7;
+    padding: .75em 5em;
+    margin-bottom: 1.5em;
+}
+.pricing main .options li::before {
+    display: block;
+    width: 8px;
+    height: 8px;
+    content: "";
+    background-color: #5227c7;
+    position: relative;
+    left: -30px;
+    top: 20px;
+    border-radius: 100%;
+}
+.pricing main .options li {
+    padding: .25em;
+    list-style: none;
+}
+section .colab li {
+    border: none;
+    margin: 5em .9em 5em 0;
+}
+section .colab li img {
+    opacity: .4;
+}
+
+/* Adaptive section pricing */
+
+@media (min-width:500px) and (max-width: 767px) {
+    .pricing main .slot {
+        margin-left: 50px;
+    }
+    .pricing .pricing-slot {
+    margin-right: 119px;
+}
+    .pricing main .oferta {
+    padding-left: 56px;
+}
+    .pricing main .card-body {
+    padding: 1rem 3rem;
+}
+    section .colab ul {
+    flex-direction: column;
+}
+    section .colab li {
+    margin: 0;
+}
+}
+@media (min-width: 767px) and (max-width: 991px) {
+    .pricing .row {
+        --bs-gutter-x: 16.5rem;
+    }
+    .pricing main .slot {
+        box-sizing: content-box;
+        margin-left: 100px;
+    }
+    .pricing main .slot:nth-child(3) {
+        margin-left: 20em;
+    }
+    .pricing .pricing-slot {
+    margin: 0;
+}
+    .pricing main .oferta h2 {
+    font-size: 30px;
+    }
+    .pricing main button {
+     padding: .75em 5em;
+    margin-bottom: 1em;
+}
+}
+.features {
+    background-color: #fff;
+}
+.features header h3 {
+    color:rgb(114, 68, 173);
+}
+.features .feature-bgc-1 {
+    height: 270px;
+    width: 230px;
+    background-color: #f7f4fd;
+    border: 2px solid #f7f4fd;
+    margin-right: 35px;
+}
+.features .feature-bgc-2 {
+    height: 270px;
+    width: 230px;
+    background-color: #f1f3ff;
+    border: 2px solid #f1f3ff;
+    margin-right: 35px;
+}
+.features .feature-bgc-3 {
+    height: 270px;
+    width: 250px;
+    background-color: #fcf1ff;
+     border: 2px solid #fcf1ff;
+     margin-right: 35px;
+}
+.features .feature-bgc-4 {
+    height: 270px;
+    width: 230px;
+    background-color: #f4effb;
+     border: 2px solid #f4effb;
+}
+.features .feature-icon img {
+    width: 55px;
+    height: 55px;
+}
+.features .icon-link {
+    text-decoration-color:rgb(114, 68, 173);
+    color: rgb(114, 68, 173);
+    text-decoration: none;
+    border-bottom: 1px solid rgb(114, 68, 173);
+}
+.features .icon-link i {
+    width: 1px;
+    height: 1em;
+    margin-left: 10px;
+}
+
+.features .decoration img {
+    position: absolute;
+    top: 2350px;
+    left: 80px;
+    width: 100px;
+    height: 150px;
+}
+.features .apply h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+.features .apply .btn {
+    margin-top: 50px;
+    padding: .5em 1em;
+    background-color: #5227c7;
+}
+/* Adaptive features section */
+@media (max-width: 767px) {
+   .features .feature-bgc-1 {
+    height: 270px;
+    width: 430px;
+}
+.features .feature-bgc-2 {
+    height: 270px;
+    width: 430px;
+}
+.features .feature-bgc-3 {
+    height: 270px;
+    width: 430px;
+}
+.features .feature-bgc-4 {
+    height: 270px;
+    width: 430px;
+} 
+.features .apply h1 {
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1.05em;
+    margin-bottom: 0;
+}
+.features .apply .btn {
+    margin-top: -2px;
+}
+}
+@media (min-width: 767px) and (max-width:991px) {
+.features .row {
+    box-sizing: content-box;
+}
+.features .feature-bgc-1 {
+    height: 270px;
+    width: 430px;
+    margin: 40px 0 20px 100px;
+}
+.features .feature-bgc-2 {
+    height: 270px;
+    width: 430px;
+    margin: 0 0 20px 100px;
+}
+.features .feature-bgc-3 {
+    height: 270px;
+    width: 430px;
+    margin: 0 0 20px 100px;
+}
+.features .feature-bgc-4 {
+    height: 270px;
+    width: 430px;
+    margin: 0 0 0 100px;
+}  
+}
+@media (min-width: 991px) and (max-width:1200px) {
+    .features .row {
+        box-sizing: content-box;
+    }
+    .features .feature-bgc-1 {
+    height: 270px;
+    width: 430px;
+    margin: 0 10px 0 0;
+}
+.features .feature-bgc-2 {
+    height: 270px;
+    width: 430px;
+    margin: 0 0 0 0;
+}
+.features .feature-bgc-3 {
+    height: 270px;
+    width: 430px;
+    margin: 25px 10px 0 0;
+}
+.features .feature-bgc-4 {
+    height: 270px;
+    width: 430px;
+}   
+}
+.footer {
+    background-color:#5d21d2;
+    margin-top: 70px;
+}
+.footer .brand {
+    width: 140px;
+    height: 65px;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer .list-group-horizontal i {
+    margin-right: -5px;
+    color: white;
+}
+.footer .list-group-horizontal i:first-child {
+    margin-left: -10px;
+}
+.footer form input {
+    padding-left: 20px;
+    margin-top: 10px;
+    width: 225px;
+    height: 55px;
+}
+.footer .button-apply {
+    background-color:#50ded3;
+    color: #301c6b;
+    width: 225px;
+    height: 55px;
+    margin-top: 25px;
+    border-color:#50ded3;
+}
+/* Adaptive footer section */
+@media (max-width: 767px) {
+    .footer .row {
+    --bs-gutter-x: -3.5rem;
+    }
+    .footer .date {
+    margin-left: 3em;
+    }
+    .footer .brand {
+    width: 170px;
+    height: 75px;
+}
+    .footer form input {
+    padding-left: 10px;
+    width: 140px;
+    height: 55px;
+}
+    .footer .button-apply {
+    width: 140px;
+    height: 55px;
+    }
+}
+@media (min-width: 767px) and (max-width:991px) {
+    .footer .row {
+    --bs-gutter-x: -8.5rem;
+    }
+    .footer .date {
+    margin-left: 7em;
+    }
+
+}
